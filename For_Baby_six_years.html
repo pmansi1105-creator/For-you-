@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Baby ❤️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,serif}
+body{background:radial-gradient(circle at 50% 0,#5b2138,#1a0a12 58%,#080408);color:#fff;overflow-x:hidden}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}.heart{position:absolute;bottom:-30px;animation:up linear forwards;opacity:.7}
+@keyframes up{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.page{min-height:100vh;display:none;place-items:center;padding:35px 20px;position:relative;z-index:1}.page.active{display:grid;animation:fade .8s}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.card{width:min(92vw,680px);padding:42px 28px;border-radius:30px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);box-shadow:0 25px 80px #0008;backdrop-filter:blur(16px);text-align:center}
+h1{font-size:clamp(38px,10vw,64px);margin:10px 0}h2{font-size:clamp(28px,7vw,45px);margin:10px 0 25px}
+p{font-size:clamp(17px,4vw,21px);line-height:1.8;color:#f8e9ee}.tiny{font-size:14px;color:#cdbbc2}
+.envelope{font-size:80px;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.08)}}
+button{font-family:inherit;border:0;border-radius:999px;padding:14px 23px;margin:8px;cursor:pointer;font-size:16px;transition:.25s}
+button:hover{transform:translateY(-2px) scale(1.03)}.primary{background:#fff;color:#51172d}.ghost{background:#ffffff16;color:#fff;border:1px solid #ffffff30}
+.quote{padding:20px;border-left:2px solid #fff6;margin:25px 0;text-align:left;font-style:italic}
+.photo{width:100%;height:210px;border:1px dashed #ffffff45;border-radius:22px;display:grid;place-items:center;color:#d9c7ce;margin:22px 0}
+#music{position:fixed;right:15px;top:15px;z-index:4;background:#ffffff16;color:#fff;border:1px solid #ffffff30;padding:9px 14px}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<button id="music" onclick="music()">🔇 Music</button>
+
+<section class="page active" id="p1"><div class="card">
+<div class="envelope">💌</div>
+<h1>Hey, Baby...</h1>
+<p>I know you probably didn't expect to see something from me.</p>
+<p class="tiny">Please stay for just a few minutes. There are some things my heart wants to say.</p>
+<button class="primary" onclick="go(2)">Open this ❤️</button>
+</div></section>
+
+<section class="page" id="p2"><div class="card">
+<h2>Six years.</h2>
+<p>Six years is not something I can look at as if it meant nothing.</p>
+<p>We have grown, changed, fought, laughed, made memories, hurt each other, forgiven each other, and shared a part of our lives that I will always carry with me.</p>
+<p>Whatever happens from here, those years were real to me. <b>You were real to me.</b></p>
+<button class="primary" onclick="go(3)">Keep reading ❤️</button>
+</div></section>
+
+<section class="page" id="p3"><div class="card">
+<h2>I'm sorry, Baby.</h2>
+<p>I know I've made mistakes. I know there are things I've done that hurt you, and I'm not going to pretend that an apology can erase them.</p>
+<p>I'm not making excuses. I'm simply telling you that I genuinely regret the moments where I hurt you, disrespected you, or made you feel like you weren't valued.</p>
+<div class="quote">“If I could go back and handle those moments with the understanding I have now, I would.”</div>
+<button class="primary" onclick="go(4)">There's something else...</button>
+</div></section>
+
+<section class="page" id="p4"><div class="card">
+<h2>I still love you. ❤️</h2>
+<p>And that's probably the hardest thing for me to admit.</p>
+<p>Even after everything, my feelings didn't simply disappear. I still miss you. I still think about you. I still remember the little things. And a part of me still hopes that the story of us doesn't have to end here.</p>
+<p>I'm not asking you to forget the past. I'm asking whether, someday, you might be willing to look at us again.</p>
+<button class="primary" onclick="go(5)">One last thing...</button>
+</div></section>
+
+<section class="page" id="p5"><div class="card">
+<h2>What I want you to know 🤍</h2>
+<p>I don't want this page to pressure you.</p>
+<p>I don't want to force you to forgive me. I don't want to make you feel guilty. And I don't want to pretend everything can become perfect with one message.</p>
+<p>I just wanted you to know that <b>I'm sorry</b>, <b>I love you</b>, and if there is still even a tiny part of you that wants to talk, I would listen.</p>
+<button class="primary" onclick="go(6)">Can we talk?</button>
+</div></section>
+
+<section class="page" id="p6"><div class="card">
+<h2>So, Baby...</h2>
+<p>If you could give us just one honest conversation — no fighting, no blame, no expectations — I would be grateful.</p>
+<p><b>Would you talk to me?</b></p>
+<button class="primary" onclick="go(7)">❤️ Yes, let's talk</button>
+<button class="ghost" onclick="go(8)">🤍 I need more time</button>
+</div></section>
+
+<section class="page" id="p7"><div class="card">
+<h2>Thank you. ❤️</h2>
+<p>That's all I wanted.</p>
+<p>A chance to talk. A chance to listen. A chance to understand each other without trying to win an argument.</p>
+<p>If you reach out, I'll be here.</p>
+<p class="quote">“Maybe we don't need to go back to who we were. Maybe we can find a way to become something better.”</p>
+<p class="tiny">Until then, please take care of yourself, Baby.</p>
+</div></section>
+
+<section class="page" id="p8"><div class="card">
+<h2>I understand. 🤍</h2>
+<p>You don't have to be ready right now.</p>
+<p>I respect that you may need time and space. I won't turn my apology into pressure.</p>
+<p>I just needed you to know what was in my heart.</p>
+<p class="quote">“I will always be grateful for the six years we shared, and I sincerely hope that one day we can talk again.”</p>
+<p class="tiny">Take care, Baby. ❤️</p>
+</div></section>
+
+<script>
+function go(n){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+n).classList.add('active');window.scrollTo(0,0)}
+function heart(){let h=document.createElement('span');h.className='heart';h.textContent=['❤️','💕','💗','🤍','♡'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=14+Math.random()*22+'px';h.style.animationDuration=6+Math.random()*5+'s';document.getElementById('hearts').appendChild(h);setTimeout(()=>h.remove(),11000)}
+setInterval(heart,650);
+const audio=new Audio("");audio.loop=true;
+function music(){if(!audio.src){alert("To add music, replace the empty audio URL in the code with your own music file.");return}if(audio.paused){audio.play();document.getElementById('music').textContent='🔊 Music'}else{audio.pause();document.getElementById('music').textContent='🔇 Music'}}
+</script>
+</body>
+</html>
